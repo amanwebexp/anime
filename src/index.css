@@ -1,0 +1,586 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: "Josefin Slab", serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+.topBarOuter {
+    display: flex;
+    margin: 0 auto;
+}
+.searchBarOuter input {
+    width: 100%;
+    height: 41px;
+    border-radius: 7px;
+    border: none !important;
+    color: gray;
+    padding: 10px;
+}
+.searchBarOuter {
+    width: 22rem;
+    margin: 0 18px;
+}
+.loader {
+    text-align: center;
+    width: 100%;
+}
+.searchResult li {
+    color: black;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.searchResult {
+    position: absolute;
+    background: #fff;
+    width: 22rem;
+    padding: 0 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: -6px;
+    z-index: -1;
+}
+
+.cartOut {
+    position: relative;
+    margin-top: 13px;
+}
+/* Zoom effect on active swiper slide */
+
+.cartOut span {
+    position: absolute;
+    top: -16px;
+    right: 2px;
+}
+ .anime-card:hover {
+    background: #e3962b !important;
+} 
+.product-collunm button {
+    background: transparent;
+    box-shadow: none !important;
+}
+.product-collunm a img {
+    height: 380px;
+}
+.single-product-row p {
+    justify-content: space-between;
+    display: flex;
+    padding: 10px 0;
+    margin: 0 0 4px;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+.single-product-row h6 {
+    font-size: 22px;
+}
+
+.productTitle {
+    height: 68px;
+}
+.container {
+    width: 100%;
+}
+/* body .singlePageOuter {
+  max-width: 1200px;
+} */
+@media (min-width: 1536px) {
+    .container,
+    body .MuiContainer-maxWidthLg {
+        max-width: 1536px;
+    }
+}
+
+/* new css */
+
+/* 1. Container: Set the stage for absolute positioning */
+.hover-expand-container {
+    /* REQUIRED: Establishes a reference point for the absolute child image */
+    position: relative;
+    /* Ensures the image doesn't get clipped by the grid item boundaries */
+    overflow: visible;
+    /* Bring the container up a layer */
+    z-index: 1;
+}
+
+/* 2. Image: Position and Transition Setup */
+.hover-expand-image {
+    /* REQUIRED: Take the image out of the normal document flow */
+    position: absolute;
+    /* Pin it to the top-left of the relative parent container */
+    top: 0;
+    left: 0;
+    /* Ensure it covers the whole parent area */
+    width: 100%;
+    height: 100%;
+    /* Smooth transition for both scale and z-index */
+    transition: transform 0.3s ease-in-out, z-index 0s;
+    object-fit: cover;
+    /* Set the expansion origin to the center for a clean look */
+    transform-origin: center center;
+}
+
+/* 3. Hover Effect */
+.hover-expand-container:hover {
+    /* Bring the entire container to the front */
+    z-index: 5;
+}
+
+/* .hover-expand-container:hover .hover-expand-image {
+    /* Scale the image up (e.g., 1.2 = 20% larger) */
+    /* transform: scale(1.2);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);  */
+
+
+/* cards css */
+
+/* Card Container */
+.anime-card {
+    background-color: #1a1a2e !important;
+    box-shadow: none !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Link and Text Styles */
+.card-link {
+    text-decoration: none;
+    color: #ffffff;
+    flex-grow: 1;
+}
+
+/* Image Styling */
+.card-media-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.card-outer {
+    padding-right: 40px !important;
+    position: relative;
+    z-index: 9999;
+}
+/* Card Content Area */
+.card-content-area {
+    background-color: #1a1a2e;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0 !important;
+     width: 100% !important; 
+     height: 210px
+}
+.productTitle {
+    font-size: 18px!important;
+}
+.card-content-area h2 {
+    padding-bottom: 25px;
+}
+
+
+.description-and-rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.productTitle {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+}
+
+.product-description,
+.product-rating {
+    color: #b0b0d8 !important;
+    font-size: 0.9rem !important;
+}
+
+.product-rating {
+    
+    margin-top: auto;
+    text-align: right;
+}
+
+
+.card-button-wrapper {
+    background-color: #1a1a2e;
+   
+    padding: 0 16px 12px 16px;
+}
+
+
+.card-button-wrapper button {
+    width: 100%;
+    background-color: #ffcc00 !important; 
+    color: #000000 !important;
+    font-weight: bold !important;
+    border-radius: 4px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+ .card-button-wrapper button:hover {
+    background-color: #e3962b !important;
+} 
+
+
+.anime-card {
+    background-color: #1a1a2e !important;
+    box-shadow: none !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.anime-card:hover {
+     background-color: #e3962b !important; 
+}
+
+
+.card-link {
+    text-decoration: none;
+    color: #ffffff;
+    flex-grow: 1;
+    transition: color 0.3s ease-in-out;
+
+}
+.card-content-area:hover {
+    background: #e3962b !important;
+}
+
+
+.anime-card:hover .card-link {
+    color: #1a1a2e; 
+}
+
+
+.card-media-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.product-collunm button:hover {
+    background: #000;
+    border-radius: 40px;
+    box-shadow: none !important;
+}
+
+
+.card-content-area {
+    background-color: #1a1a2e;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0 !important;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.anime-card:hover .card-content-area {
+     background-color: #e3962b !important; 
+}
+
+
+.description-and-rating-wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.productTitle {
+    color: #ffffff !important;
+    font-weight: 600;
+    margin-bottom: 8px !important;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.anime-card:hover .productTitle {
+    color: #1a1a2e !important;
+}
+
+.product-description,
+.product-rating {
+    color: #b0b0d8 !important;
+    font-size: 0.9rem !important;
+    transition: color 0.3s ease-in-out;
+}
+
+
+.anime-card:hover .product-description,
+.anime-card:hover .product-rating {
+    color: #1a1a2e !important;
+}
+
+
+.card-button-wrapper {
+    background-color: #1a1a2e;
+    padding: 0 16px 12px 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.anime-card:hover .card-button-wrapper {
+    background-color: #e3962b !important; 
+}
+
+
+.card-button-wrapper button {
+    width: 100%;
+    background-color: #1a1a2e !important; 
+    color: #ffcc00 !important; 
+    font-weight: bold !important;
+    border-radius: 4px;
+    padding: 10px;
+    text-transform: uppercase;
+    border: 1px solid #ffcc00; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
+}
+
+.card-button-wrapper button:hover {
+    background-color: #e3962b ;
+    color: #1a1a2e !important; 
+    border-color: #1a1a2e;
+}
+
+.banner-wrapper {
+    background-image: url("/public/main-banner.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 954px;
+}
+.card-bg {
+    background-image: url("/public/cart.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.slider-wrapper {
+    background-image: url("/public/portfolio.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    padding: 80px 0;
+}
+
+.footer-bg {
+    background-image: url("/public/footer");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    background-position: bottom center;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    background-image: url("/public/Products.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1580px;
+    background-position: bottom center;
+}
+.product-bg {
+    background-image: url("/public/Products-single-bg.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.anime-card:hover.product-collunm button {
+    background-color: #000000 !important;
+}
+.card-link:hover.product-collunm button {
+    background-color: #000000 !important;
+}
+.Week-slider {
+    background-image: url("/public/bg -Week.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 780px;
+    background-position: bottom center;
+}
+.MuiCardContent-root.card-content-area.css-46bh2p-MuiCardContent-root:hover .add-card {
+    background: #000 !important;
+}
+.swiper-pagination-bullet {
+    background: #e3962b;
+    opacity: 14;
+    width: 12px;
+    height: 12px;
+    z-index: 9999;
+    position: absolute;
+    margin-top: 30px;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 30px;
+}
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+.swiper-pagination {
+    bottom: 10px;
+}
+
+@media screen and (max-width: 1600px) {
+    .season {
+        padding: 0px 30px;
+    }
+    .footer-bg {
+    height: 700px;
+ 
+}
+}
+@media screen and (max-width: 1200px) {
+.search-cart {
+    justify-content: center !important;
+}
+.Week-slider a.card-link {
+    height: 530px !important;
+}
+.code-item-wrp {
+    display: block !important;
+    padding: 144px 90px !important;
+}
+.code-img {
+    width: 100% !important;
+}
+.code-inner {
+    margin-top: 40px !important;
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+}
+@media screen and (max-width: 1024px) {
+    .banner-wrp {
+        height: 520px;
+    }
+    .season span {
+        font-size: 50px !important;
+    }
+    .discover-all {
+        font-size: 46px !important;
+    }
+    .discover-all-sub {
+        font-size: 46px !important;
+    }
+    .slider-wrapper h3 {
+        font-size: 36px !important;
+    }
+    .footer-subtitle {
+    font-size: 94px !important;
+}
+.banner-wrp img {
+    height: 613px !important;
+}
+
+.code-inner {
+    margin-top: 55px;
+    margin-left: 0px !important;
+}
+
+.ranked {
+    font-size: 16px !important;
+    display: block !important;
+}
+}
+
+@media screen and (max-width: 767px) {
+    .banner-wrp {
+        height: 520px;
+    }
+    .slider-wrapper h3 {
+        font-size: 22px !important;
+    }
+
+    .slider {
+        display: block !important;
+    }
+    .footer-subtitle {
+        font-size: 56px !important;
+    }
+    .latest-releases {
+        margin-left: 0px !important;
+    }
+    .footer-bg {
+        height: 559px;
+    }
+    .tracking-wide {
+    font-size: 36px !important;
+}
+.banner-wrapper {
+    background-image: url("/public/mobile -bg.png");
+    z-index: 10;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 670px !important;
+}
+
+}
+@media screen and (max-width: 620px) {
+.footer-bg {
+    height: 610px;
+}
+.code-item-wrp {
+    display: block !important;
+    padding: 124px 30px !important;
+}
+
+.tracking-outside-wrp {
+    margin-top: 1rem !important;
+}
+.code-inner h1 {
+    font-size: 28px !important;
+}
+.shopping-cart {
+    padding-left: 35px !important;
+    font-size: 28px !important;
+}
+.card-bg {
+    padding-top: 30px !important;
+}
+
+}
+
+
+@media screen and (max-width: 480px) {
+    .discover-all {
+        font-size: 36px !important;
+    }
+    .discover-all-sub {
+        font-size: 36px !important;
+    }
+    .season {
+    font-size: 36px !important;
+}
+
+}
+
+.card-link {
+    text-decoration: none;
+    color: #FFFFFF;
+    flex-grow: 1;
+    transition: color 0.3s ease-in-out;
+}

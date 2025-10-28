@@ -1,0 +1,7 @@
+.next
+.env
+log
+node_modules
+package-lock.json
+!uploads/**/
+config/credentials.json
