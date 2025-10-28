@@ -17,8 +17,8 @@ const CartTotal = () => {
     <>
       <div className="cartOut">
         <Link to="/cart">
-          <ShoppingCartIcon />{" "}
-          <Typography className="text-yellow" variant="span"> {getTotalCartItems()}</Typography>{" "}
+          <ShoppingCartIcon className="text-white" />{" "}
+          <Typography className="text-white" variant="span"> {getTotalCartItems()}</Typography>{" "}
         </Link>
       </div>
     </>

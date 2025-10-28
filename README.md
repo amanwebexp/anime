@@ -34,9 +34,8 @@ Built with a responsive UI, real-time search, and detailed anime views.
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/anime.git
-cd anime
-
+git clone https://github.com/amanwebexp/anime.git
+cd  anime
 # Install dependencies
 npm install
 

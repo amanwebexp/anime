@@ -64,11 +64,11 @@ const Cart = () => {
           </Typography>
           <Container
             maxWidth="lg"
-            className="  bg-[#050E1F] p-20 border-2 border-solid border-[#182E57] shadow-2xl"
+            className="  bg-[#182e24] p-20 border-2 border-solid border-[#182e24] shadow-2xl"
           >
             <TableContainer
               component={Paper}
-              className="bg-[#050E1F] shadow-none"
+              className="bg-[#182e24] shadow-none"
             >
               {cart.length === 0 ? (
                 <>
@@ -79,7 +79,7 @@ const Cart = () => {
                     <Button
                       href="/"
                       variant="contained"
-                      className="mt-4 bg-[#E3962B] hover:bg-[#c6851f]"
+                      className="mt-4 bg-[#10f4ff] text-black hover:bg-[#c6851f]"
                     >
                       Go to Products
                     </Button>

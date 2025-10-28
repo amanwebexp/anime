@@ -90,7 +90,6 @@ function HeaderTopBar() {
               }}
             >
               <SearchBar />
-              <StyledButton>Get in touch</StyledButton>
               <StyledCartButton>
                 <CartTotal />
               </StyledCartButton>

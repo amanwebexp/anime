@@ -32,7 +32,6 @@ const ProductCard = ({ anime }) => {
         {/* 3. Content Area - Set to flex column to control internal layout */}
         <CardContent className="card-content-area">
           
-          {/* Title */}
           <Typography variant="h6" component="h2" className="productTitle">
             {anime.title}
           </Typography>

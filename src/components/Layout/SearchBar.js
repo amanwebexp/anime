@@ -9,7 +9,7 @@ import { Box, styled } from "@mui/material";
 // Custom styled container for the search bar
 const StyledSearchContainer = styled(Box)(({ theme }) => ({
   backgroundColor: '#000116', // Same dark background as the header
-  border: '1px solid #ffcc00', // Yellow border
+  border: '1px solid #f8f8f8ff', // Yellow border
   borderRadius: '9999px', // Fully rounded
   display: 'flex',
   alignItems: 'center',
@@ -18,7 +18,7 @@ const StyledSearchContainer = styled(Box)(({ theme }) => ({
 
 // Custom styled input field
 const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: '#b0b0d8', // Light text color
+  color: '#f7f7f7ff', // Light text color
   '& .MuiInputBase-input': {
     padding: '4px',
     paddingLeft: '8px',
@@ -69,13 +69,13 @@ function SearchBar() {
             value={searchTerm}
             sx={{
               "& input::placeholder": {
-                color: "#E3962B",     
+                color: "#f0ececff",     
                 opacity: 1,      
               },
             }}
           />
 
-        <IconButton sx={{ color: '#E3962B' }} aria-label="search">
+        <IconButton sx={{ color: '#000000ff' }} aria-label="search">
           <SearchIcon />
         </IconButton>
       </StyledSearchContainer>
@@ -89,8 +89,8 @@ function SearchBar() {
             left: 0,
             right: 0,
             zIndex: 10,
-            backgroundColor: '#E3962B',
-            border: '1px solid #E3962B',
+            backgroundColor: '#ebebebff',
+            border: '1px solid #0a0a0aff',
             borderRadius: '8px',
             boxShadow: '0px 4px 8px rgba(0,0,0,0.2)',
             overflow: 'hidden',
@@ -107,7 +107,7 @@ function SearchBar() {
                   transition: 'background-color 0.2s',
                 }}
               >
-                <Link to={`/products/${value.mal_id}`} style={{ textDecoration: 'none', color: '#fff' }}>
+                <Link to={`/products/${value.mal_id}`} style={{ textDecoration: 'none', color: '#000000ff' }}>
                   {value.title}
                 </Link>
               </li>

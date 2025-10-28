@@ -25,7 +25,7 @@ const AddToCart = ({ product, addToCart }) => {
 
   return (
     <>
-      <Button variant="contained" color="primary" onClick={handleAddToCart} className="bg-[#E3962B] text-black font-bold hover:bg-[#df9023]">
+      <Button variant="contained" onClick={handleAddToCart} className="bg-[#10f4ff] text-black font-bold hover:bg-[#10f4ff]">
         Add to Cart
       </Button>
     </>

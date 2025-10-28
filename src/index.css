@@ -57,7 +57,7 @@ code {
     right: 2px;
 }
  .anime-card:hover {
-    background: #e3962b !important;
+    background: #10f4ff !important;
 } 
 .product-collunm button {
     background: transparent;
@@ -139,7 +139,7 @@ code {
 
 /* Card Container */
 .anime-card {
-    background-color: #1a1a2e !important;
+    background-color: #182e24 !important;
     box-shadow: none !important;
     height: 100%;
     display: flex;
@@ -166,7 +166,7 @@ code {
 }
 /* Card Content Area */
 .card-content-area {
-    background-color: #1a1a2e;
+    background-color: #182e24;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -210,7 +210,7 @@ code {
 
 
 .card-button-wrapper {
-    background-color: #1a1a2e;
+    background-color: #182e24;
    
     padding: 0 16px 12px 16px;
 }
@@ -218,7 +218,7 @@ code {
 
 .card-button-wrapper button {
     width: 100%;
-    background-color: #ffcc00 !important; 
+    background-color: #10f4ff !important; 
     color: #000000 !important;
     font-weight: bold !important;
     border-radius: 4px;
@@ -227,12 +227,12 @@ code {
 }
 
  .card-button-wrapper button:hover {
-    background-color: #e3962b !important;
+    background-color: #10f4ff !important;
 } 
 
 
 .anime-card {
-    background-color: #1a1a2e !important;
+    background-color: #182e24 !important;
     box-shadow: none !important;
     height: 100%;
     display: flex;
@@ -242,7 +242,7 @@ code {
 
 
 .anime-card:hover {
-     background-color: #e3962b !important; 
+     background-color: #10f4ff !important; 
 }
 
 
@@ -254,12 +254,12 @@ code {
 
 }
 .card-content-area:hover {
-    background: #e3962b !important;
+    background: #10f4ff !important;
 }
 
 
 .anime-card:hover .card-link {
-    color: #1a1a2e; 
+    color: #182e24; 
 }
 
 
@@ -276,7 +276,7 @@ code {
 
 
 .card-content-area {
-    background-color: #1a1a2e;
+    background-color: #182e24;
     padding: 16px;
     display: flex;
     flex-direction: column;
@@ -286,7 +286,7 @@ code {
 
 
 .anime-card:hover .card-content-area {
-     background-color: #e3962b !important; 
+     background-color: #10f4ff !important; 
 }
 
 
@@ -307,7 +307,7 @@ code {
 
 
 .anime-card:hover .productTitle {
-    color: #1a1a2e !important;
+    color: #182e24 !important;
 }
 
 .product-description,
@@ -320,38 +320,38 @@ code {
 
 .anime-card:hover .product-description,
 .anime-card:hover .product-rating {
-    color: #1a1a2e !important;
+    color: #182e24 !important;
 }
 
 
 .card-button-wrapper {
-    background-color: #1a1a2e;
+    background-color: #182e24;
     padding: 0 16px 12px 16px;
     transition: background-color 0.3s ease-in-out;
 }
 
 
 .anime-card:hover .card-button-wrapper {
-    background-color: #e3962b !important; 
+    background-color: #10f4ff !important; 
 }
 
 
 .card-button-wrapper button {
     width: 100%;
-    background-color: #1a1a2e !important; 
-    color: #ffcc00 !important; 
+    background-color: #182e24 !important; 
+    color: #10f4ff !important; 
     font-weight: bold !important;
     border-radius: 4px;
     padding: 10px;
     text-transform: uppercase;
-    border: 1px solid #ffcc00; 
+    border: 1px solid #10f4ff; 
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 .card-button-wrapper button:hover {
-    background-color: #e3962b ;
-    color: #1a1a2e !important; 
-    border-color: #1a1a2e;
+    background-color: #10f4ff ;
+    color: #182e24 !important; 
+    border-color: #182e24;
 }
 
 .banner-wrapper {
@@ -382,7 +382,7 @@ code {
     z-index: 10;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 450px;
+    /* height: 450px; */
     background-position: bottom center;
 }
 
@@ -425,7 +425,7 @@ code {
     background: #000 !important;
 }
 .swiper-pagination-bullet {
-    background: #e3962b;
+    background: #10f4ff;
     opacity: 14;
     width: 12px;
     height: 12px;
@@ -443,15 +443,14 @@ code {
 .swiper-pagination {
     bottom: 10px;
 }
-
+.header-nav{
+    background: transparent !important;
+}
 @media screen and (max-width: 1600px) {
     .season {
         padding: 0px 30px;
     }
-    .footer-bg {
-    height: 700px;
- 
-}
+    
 }
 @media screen and (max-width: 1200px) {
 .search-cart {

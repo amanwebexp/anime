@@ -26,6 +26,7 @@ const AnimeRecomdation = () => {
   useEffect(() => {
     getRecommendationAnime();
   }, []);
+
   return (
     <>
       {/* these three  */}
@@ -50,9 +51,9 @@ const AnimeRecomdation = () => {
     <Grid
       key={index}
       item
-      xs={12}   // 1 item per row on mobile
-      sm={6}    // 2 items per row on small screens
-      md={4}    // 3 items per row on medium (≥900px) and larger
+      xs={12}   
+      sm={6}   
+      md={4}    
     >
       <Link to={`/products/${item.mal_id}`}>
         <div className="flex flex-col text-left product-outer">
@@ -66,7 +67,7 @@ const AnimeRecomdation = () => {
           </div>
 
           {/* Heading and subtitle */}
-          <h3 className="mt-4 text-[#E3962B] text-[30px] font-bold uppercase">
+          <h3 className="mt-4 text-[#10f4ff] text-[30px] font-bold uppercase">
             {item.title}
           </h3>
         </div>

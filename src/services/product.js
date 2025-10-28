@@ -9,6 +9,7 @@ const productApi = {
   getSingleProduct: (id) => {
     return ApiClient.get(`/anime/${id}`);
   },
+  
   // Function to search products by a search term
   getSearchProduct: (key) => {
     return ApiClient.get(`/anime/?q=${key}&order_by=title&sort=asc&limit=10`);

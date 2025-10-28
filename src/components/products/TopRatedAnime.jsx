@@ -30,7 +30,7 @@ const TopRatedAnime = () => {
   };
   return (
     <>
-      <div className="bg-[#0C1027] py-16 px-4 overflow-hidden Week-slider">
+      <div className="bg-[#031d1d] py-16 px-4 overflow-hidden Week-slider">
         <h2 className="text-white text-[50px] font-bold mb-12 text-center tracking-wide uppercase">
           Top Rated Anime
         </h2>
